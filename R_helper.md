@@ -791,6 +791,8 @@ We are now ready to being the model!
 
 ## Creating and training the model
 
+**This is where script 2 ends and script 4 begins**
+
 Since we have 3 datasets, we will be creating 3 models. Let’s begin with
 serves
 
