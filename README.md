@@ -5,7 +5,7 @@ Welcome to our submission for the 2024 CMSAC Reproducible Research Competition. 
 
 Our coding process was done using a mix of Python and R, with a lot of the preprocessing and initial insights being done in Python and most of the modeling being done in R. We will be switching between both languages, but we will make sure you know when. We have also attached an "R_helper" file which is a markdown that provides pretty extensive commentary for both R scripts. It should do a good job in explaining the logic behind most of the code we wrote.
 
-Our initial data can be found in Jeff Sackmann’s Github and was too big to attach here. It can be found here. As the link shows, the csv we used is called “charting-m-points-2020s.csv”. https://github.com/JeffSackmann/tennis_MatchChartingProject/blob/master/charting-m-points-2020s.csv. We were also only able to attach our Kmeans clustering datasets but have included code to save the larger, more important, datasets remotely.
+Our initial data can be found in Jeff Sackmann’s Github and was too big to attach here. It can be found here. As the link shows, the csv we used is called “charting-m-points-2020s.csv”. [Link]{https://github.com/JeffSackmann/tennis_MatchChartingProject/blob/master/charting-m-points-2020s.csv}. We were also only able to attach our Kmeans clustering datasets but have included code to save the larger, more important, datasets remotely.
 
 ## Context for attached files
 The way we have documented our code below. The starting number indicates the relative order of the scripts according to the paper (although there is some overlap) and the last number indicates the section of the paper this script is for.
