@@ -662,7 +662,7 @@ Now we save this player aggressiveness data as a csv so that it can be used as t
 write.csv(player_agg, "player_agg.csv")
 ```
 
-##Reward metric
+## Reward metric
 
 Remember that the basis of the metric is whether or not the player won
 the point and how many shots are left in the rally. We group by player,
@@ -685,7 +685,7 @@ final_tennis <- final_tennis %>%
   mutate(reward = ifelse(is_fault == 1 & is_double_fault == 0, 0, ifelse(is_fault == 1 & is_double_fault == 1, -5, reward)))
 ```
 
-##Binning the variables
+## Binning the variables
 
 Now, we categorize each level of the game - point, game, and set. Before
 this, we need to do some more data manipulation. We remove some matches
@@ -838,7 +838,7 @@ rallies_only <- filter(final_tennis_data, shot_num > 2)
 
 We are now ready to being the model!
 
-##Creating and training the model
+## Creating and training the model
 
 Since we have 3 datasets, we will be creating 3 models. Let’s begin with
 serves
@@ -995,8 +995,10 @@ final_data_rallies <- cbind(rallies_test_context, expected_rallies)
 final_data_rallies$diff <- final_data_rallies$reward - final_data_rallies$pred_xgb
 ```
 
-##Testing the models We import the dataset that has all of the possible
-environment-action pairs. We will eventually be inputting this into our
+## Testing the models 
+
+We import the dataset that has all of the possible
+environment-action pairs (the output for script 5). We will eventually be inputting this into our
 model. We convert the factor variables into dummy variables and then
 input it separately into each model.
 
