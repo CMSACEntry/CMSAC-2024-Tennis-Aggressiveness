@@ -657,8 +657,9 @@ gt(head(player_agg))
 </table>
 </div>
 
+Now we save this player aggressiveness data as a csv so that it can be used as the input for script 3.
 ``` r
-final_tennis$is_hitter_winner <- ifelse(final_tennis$hitting_player == final_tennis$pt_winner, 1, 0)
+write.csv(player_agg, "player_agg.csv")
 ```
 
 ##Reward metric
@@ -670,6 +671,8 @@ down. We then use this variable and the point winner variable as the
 basis for our reward metric.
 
 ``` r
+final_tennis$is_hitter_winner <- ifelse(final_tennis$hitting_player == final_tennis$pt_winner, 1, 0)
+
 final_tennis <- final_tennis %>%
   group_by(point_counter, hitting_player, match_id) %>%
   mutate(shots_left_player = n() - row_number()) %>%
