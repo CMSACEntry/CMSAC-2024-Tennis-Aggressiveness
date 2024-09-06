@@ -1,3 +1,7 @@
+# Walking through both R scripts
+
+This markdown file will walk you through both R scripts. It will also help you understand when to use the Python scripts as well.
+
 ## Setting up the data
 
 The first step is to load in the libraries that we will be working with.
