@@ -3,7 +3,7 @@
 ## Introduction
 Welcome to our submission for the 2024 CMSAC Reproducible Research Competition. Aggressiveness is one of the most critical yet understudied qualities in men's tennis. In our project, we used a mix of machine learning and data analysis to determine the ideal aggressiveness a player should play with for a given shot based on the match context.
 
-Our coding process was done using a mix of Python and R, with a lot of the preprocessing and initial insights being done in Python and most of the modeling being done in R. We will be switching between both languages, but we will make sure you know when.
+Our coding process was done using a mix of Python and R, with a lot of the preprocessing and initial insights being done in Python and most of the modeling being done in R. We will be switching between both languages, but we will make sure you know when. We have also attached an "R_helper" file which is a markdown that provides pretty extensive commentary for both R scripts.
 
 Our initial data can be found in Jeff Sackmann’s Github and was too big to attach here. It can be found here. As the link shows, the csv we used is called “charting-m-points-2020s.csv”. https://github.com/JeffSackmann/tennis_MatchChartingProject/blob/master/charting-m-points-2020s.csv. We were also only able to attach our Kmeans clustering datasets but have included code to save the larger, more important, datasets remotely.
 
@@ -31,7 +31,8 @@ The way we have documented our code below. The starting number indicates the rel
 
   - 5b---5_output.csv: Every possible state/action pair. If you have this output, you do not need to run script 5. This will be inputted into script 4 as detailed in section 5.4 of our paper.
 
- 
+- R_helper.md - R MARKDOWN - Walks you through both R files and shows when to use the Python files
+  
 # How to reproduce our project
 
 If you would like to reproduce our project, this is what you can do:
