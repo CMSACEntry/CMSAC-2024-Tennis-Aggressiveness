@@ -28,6 +28,10 @@ The way we have documented our code below. The starting number indicates the rel
   
 - 5---All_state_action_pairs_5.4.py - PYTHON - This is a simple script to create a dataset that contains every possible state (environment) and action pair as we detailed in the paper. This will ultimately be inputted into the XGBoost models to provide us with the optimal aggressiveness.
 
+
+  - 5b---5_output.csv: Every possible state/action pair. If you have this output, you do not need to run script 5. This will be inputted into script 4 as detailed in section 5.4 of our paper.
+
+ 
 # How to reproduce our project
 
 If you would like to reproduce our project, this is what you can do:
