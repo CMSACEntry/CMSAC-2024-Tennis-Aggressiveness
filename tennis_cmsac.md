@@ -526,7 +526,7 @@ tennisdata1 <- tennisdata1 %>%
   mutate(agg_rating = ifelse(is_fault == 1 & error_type == "d" & serve_zone == 6 | is_fault == 1 & error_type == "w" & serve_zone == 6 | is_fault == 1 & error_type == "x" & serve_zone == 6, 10, ifelse(is_fault == 1 & serve_zone == 5, 2, ifelse(is_fault == 1 & serve_zone == 4 | is_fault == 1 & serve_zone == 6 & error_type != "x" & error_type != "w" & error_type != "d" | is_fault == 1 & serve_zone == "missing", 5, agg_rating))))
 ```
 
-##Player rankings
+## Player rankings
 
 As mentioned in the paper, we decided to scrape yearly ATP rankings from
 ESPN. This would display the top 150 players and we will eventually join
@@ -586,7 +586,7 @@ colnames(tennisdata1)[colnames(tennisdata1) == "rank.x"] <- "hitter_rank"
 colnames(tennisdata1)[colnames(tennisdata1) == "rank.y"] <- "oposition_rank"
 ```
 
-##Some more data wrangling
+## Some more data wrangling
 
 Some miscellaneous data wrangling: Creating a “game counter” variable,
 removing some data that was inputted weirdly, and creating a new
