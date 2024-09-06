@@ -27,3 +27,14 @@ The way we have documented our code below. The starting number indicates the rel
 
   
 - 5---All_state_action_pairs_5.4.py - PYTHON - This is a simple script to create a dataset that contains every possible state (environment) and action pair as we detailed in the paper. This will ultimately be inputted into the XGBoost models to provide us with the optimal aggressiveness.
+
+# How to reproduce our project
+
+If you would like to reproduce our project, this is what you can do:
+1) Download the initial data which we have linked
+2) Run script 1 and save the output
+3) Run script 2 by using the output of script 1 as the input. In the middle of script 2, we have average player aggressiveness. Save that as it will be the input for script 3. Continue running the script and save the final output. This will be used for script 4.
+4) Run script 3 by using the first output of script 2 as the input. Save the output.
+5) Run script 4 - Use the final output of script 2 as the input. After you train and test the initial XGBoost model, it is time to run script 5.
+6) Run Script 5 or load the sa_pairs csv into script 4. Save the output and load it into script 4.
+7) Continue running script 4. This will now get you the ideal aggressiveness for every shot in our dataset. We can also visualize the data now.
