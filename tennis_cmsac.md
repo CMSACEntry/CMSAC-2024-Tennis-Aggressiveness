@@ -695,7 +695,6 @@ player is “player 2”.
 ``` r
 tennis_test <- final_tennis %>%
   mutate(player_number = ifelse(hitting_player == player_1, 1, 2))
-str(tennis_test)
 ```
 
     ## tibble [1,268,027 × 36] (S3: tbl_df/tbl/data.frame)
