@@ -148,12 +148,12 @@ final_tennis$hitter_rank[is.na(final_tennis$hitter_rank)] <- "151"
 final_tennis$opposition_rank[is.na(final_tennis$opposition_rank)] <- "151"
 table(final_tennis$tournament)
 
-n <- final_tennis %>%
+player_rankings <- final_tennis %>%
   group_by(hitting_player) %>%
   summarize(shots_played = n(), agg = mean(agg_rating) )
 final_tennis$is_hitter_winner <- ifelse(final_tennis$hitting_player == final_tennis$pt_winner, 1, 0)
-write.csv(final_tennis, "final_tennis.csv")
-write.csv(n, "player_agg.csv")
+
+write.csv(player_rankings, "player_agg.csv") #For script 3
 
 #Reward metric----
 final_tennis <- final_tennis %>%
@@ -255,9 +255,9 @@ serves_only <- filter(final_tennis_data, shot_num == 1)
 returns_only <- filter(final_tennis_data, shot_num == 2)
 rallies_only <- filter(final_tennis_data, shot_num > 2)
 
-write.csv(serves_only. "serves_only.csv")
-write.csv(returns_only "returns_only.csv")
-write.csv(rallies_only "rallies_only.csv")
+write.csv(serves_only. "serves_only.csv") #For script 4
+write.csv(returns_only "returns_only.csv") #For script 4
+write.csv(rallies_only "rallies_only.csv") #For script 4
 
 write.csv(final_tennis_data, "final_tennis_data.csv")
 
