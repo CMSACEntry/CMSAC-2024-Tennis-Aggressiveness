@@ -13,13 +13,13 @@ The way we have documented our code below. The starting number indicates the rel
 - 0---Paper.pdf - Final Paper
 
 
-- 1---Processing_raw_data_2.3.ipynb - PYTHON - Used to process the raw data into shot-by-shot data by taking the rally codes and extrapolating them into multiple rows worth of data. Here, we converted Jeff Sackmann’s data to our liking as detailed in the paper.
+- 1---Processing_raw_data_2.3.ipynb - JUPYTER NOTEBOOK - Used to process the raw data into shot-by-shot data by taking the rally codes and extrapolating them into multiple rows worth of data. Here, we converted Jeff Sackmann’s data to our liking as detailed in the paper.
 
 
 - 2---Pre-model_data_wrangling_4.R - R -  Used to process the data to prepare for the model. This includes how we created the aggressiveness and reward metrics as well as some more datawrangling and variable creation. Input is the output of the first script.
 
   
-- 3---Tiering_players_3.2.ipynb - PYTHON - Used to create the tiers for aggressiveness rating using a K-means clustering model - The input was the average aggressiveness of each player and the output is a csv with a column that categorizes the players based on aggressiveness level.
+- 3---Tiering_players_3.2.ipynb - JUPYTER NOTEBOOK - Used to create the tiers for aggressiveness rating using a K-means clustering model - The input was the average aggressiveness of each player and the output is a csv with a column that categorizes the players based on aggressiveness level.
   
   - 3a---3_input.csv: list of players and their aggressiveness rating
   
