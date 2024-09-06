@@ -32,8 +32,6 @@ tennisdata$next_direction <- lead(tennisdata$direction)
 
 gt(head(tennisdata))
 ```
-
-</style>
 <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
   <thead>
     <tr class="gt_col_headings">
