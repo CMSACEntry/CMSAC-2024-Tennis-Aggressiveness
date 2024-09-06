@@ -568,15 +568,6 @@ results <- map(df_list, "result")
 combined_df <- bind_rows(results)
 ```
 
-    ## New names:
-    ## • `` -> `...2`
-
-``` r
-colnames(combined_df)
-```
-
-    ## [1] "RK"     "NAME"   "POINTS" "Year"   "...2"   "AGE"
-
 ``` r
 rankings <- select(combined_df, rank = RK, name = NAME, year = Year)
 
