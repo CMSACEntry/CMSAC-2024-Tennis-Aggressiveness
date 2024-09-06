@@ -1,7 +1,9 @@
 # Quantifying Aggressiveness in Men's Tennis
 
 ## Introduction
-Welcome to our submission for the 2024 CMSAC Reproducible Research Competition. Our coding process was done using a mix of Python and R, with a lot of the preprocessing and initial insights being done in Python and most of the modeling being done in R. We will be switching between both languages, but we will make sure you know when.
+Welcome to our submission for the 2024 CMSAC Reproducible Research Competition. Aggressiveness is one of the most critical yet understudied qualities in men's tennis. In our project, we used a mix of machine learning and data analysis to determine the ideal aggressiveness a player should play with for a given shot based on the match context.
+
+Our coding process was done using a mix of Python and R, with a lot of the preprocessing and initial insights being done in Python and most of the modeling being done in R. We will be switching between both languages, but we will make sure you know when.
 
 Our initial data can be found in Jeff Sackmann’s Github and was too big to attach here. It can be found here. As the link shows, the csv we used is called “charting-m-points-2020s.csv”. https://github.com/JeffSackmann/tennis_MatchChartingProject/blob/master/charting-m-points-2020s.csv. We were also only able to attach our Kmeans clustering datasets but have included code to save the larger, more important, datasets remotely.
 
