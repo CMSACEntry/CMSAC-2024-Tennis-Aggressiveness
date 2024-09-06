@@ -595,11 +595,6 @@ tennisdata1 <- tennisdata1 %>%
   mutate(game_counter = as.numeric(game_counter))
 ```
 
-    ## Warning: There was 1 warning in `mutate()`.
-    ## ℹ In argument: `game_counter = as.numeric(game_counter)`.
-    ## Caused by warning:
-    ## ! NAs introduced by coercion
-
 ``` r
 final_tennis <- select(tennisdata1, match_id, year, shot_num, tournament, player_1 = Player_1, player_2 = Player_2, point_counter = Pt, game_counter, set1 = Set1, set2 = Set2, gm1 = Gm1, gm2 = Gm2, pt1 = Player_1_Pts, pt2 = Player_2_Pts, hitting_player = Hitting_Player, opposing_player, pt_winner = PtWinner_Player, gm_winner = GmWinner_Player, set_winner = SetWinner_Player, match_winner = MatchWinner_Player, hitter_rank, opposition_rank = oposition_rank, outcome_shottype_aggressiveness, is_fault, direction_aggressiveness, approach_aggressiveness, serve_aggressiveness, outcome_aggressiveness, depth_aggressiveness, agg_rating, shots_left)
 final_tennis <- final_tennis %>%
